@@ -62,13 +62,13 @@ function toggle(button) {
                         window.location.href = window.location.origin + '/scent8=OFF'; 
                         break;
                     case 'temp1': 
-                        window.location.href = window.location.origin + '/temp1=0'; 
+                        window.location.href = window.location.origin + '/temp1=OFF'; 
                         break;
                     case 'temp2':
-                        window.location.href = window.location.origin + '/temp2=0'; 
+                        window.location.href = window.location.origin + '/temp2=OFF'; 
                         break;
                     case 'temp3': 
-                        window.location.href = window.location.origin + '/temp3=0'; 
+                        window.location.href = window.location.origin + '/temp3=OFF'; 
                         break;
                 }
             }
