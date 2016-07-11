@@ -1,0 +1,144 @@
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            background: url('http://www.psdgraphics.com/file/light-blue-background.jpg') no-repeat center center fixed;
+        }
+        
+        .button-ind-cust {
+            margin: 5px 20px 5px;
+            height: 100px;
+            cursor: pointer;
+        }
+        
+        .lav {
+            background: url('http://s1.bwallpapers.com/wallpapers/2014/02/11/lavender-hd_092814572.jpg') no-repeat center;
+            background-size: 100%;
+        }
+        
+        .ros {
+            background: url('http://wallpapercave.com/wp/e8xnTpf.jpg') no-repeat center;
+            background-size: 100%;
+        }
+        
+        .lem {
+            background: url('http://www.topmattressreviews.net/data/wallpapers/2/lemon_699483.jpg') no-repeat center;
+            background-size: 100%;
+        }
+        
+        .ora {
+            background: url('http://www.hd-wallpapersdownload.com/script/orange-wallpaper/orange-fruit-hd-wallpaper-download.jpg') no-repeat center;
+            background-size: 100%;
+        }
+        
+        .jas {
+            background: url('http://www.dailybackgrounds.com/wp-content/gallery/jasmine-flower/white-jasmine-wallpaper.jpg') no-repeat center;
+            background-size: 100%;
+        }
+        
+        .cof {
+            background: url('http://img2.themebin.com/hd-wallpapers/1920x1080/coffee-world-wallpaper.jpg') no-repeat center;
+            background-size: 100%;
+        }
+        
+        .cin {
+            background: url('http://www.magic4walls.com/wp-content/uploads/2014/05/cinnamon-pattern-sticks-food-macro-focus-spices-table-picture-.jpg') no-repeat center;
+            background-size: 100%;
+        }
+        
+        .air {
+            background: url('http://il9.picdn.net/shutterstock/videos/10182104/thumb/8.jpg') no-repeat center;
+            background-size: 100%;
+        }
+        
+        .eq1 {
+            background: url('http://wallpapercave.com/wp/8nTG8bR.png') no-repeat center;
+            background-size: 100%;
+        }
+        
+        .eq2 {
+            background: url('http://www.psdgraphics.com/file/2016/blue-music-equalizer.jpg') no-repeat center;
+            background-size: 100%;
+        }
+        
+        .eq3 {
+            background: url('https://image.freepik.com/free-vector/equalizer-wave-background_59-1025.jpg') no-repeat center;
+            background-size: 100%;
+        }
+        
+        .button-temp-cust {
+            margin: 5px 0 10px;
+            height: 100px;
+            cursor: pointer;
+        }
+        
+        .image {
+            height: 150px;
+            width: 150px;
+        }
+        
+        .cust-ind {
+            padding: 0.5%;
+        }
+        
+        .cust-temp {
+            padding: 0.5%;
+        }
+        
+        .heading {
+            margin-top: 10px;
+            height: 180px;
+            background: url('https://www.dropbox.com/s/pnvy4pnotrf9ikq/kenzen.png?raw=1') no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .pn {
+            box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+        }
+        
+        .pn:hover {
+            box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .button-ind-cust .text {
+            visibility: hidden;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .button-ind-cust:hover .text {
+            visibility: visible;
+        }
+        
+        .button-temp-cust .text {
+            visibility: hidden;
+            color: red;
+            text-align: center;
+            line-height: 100px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .button-temp-cust:hover .text {
+            visibility: visible;
+        }
+        
+        .title {
+            font-family: Palatino Linotype;
+            font-variant: small-caps;
+            background: #009900;
+            color: white;
+            padding: 5px;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+        }
