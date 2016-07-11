@@ -26,13 +26,13 @@ function toggle(button) {
                         window.location.href = window.location.origin + '/scent8=ON'; 
                         break;
                     case 'temp1': 
-                        window.location.href = window.location.origin + '/temp=1'; 
+                        window.location.href = window.location.origin + '/temp1=ON'; 
                         break;
                     case 'temp2': 
-                        window.location.href = window.location.origin + '/temp=2'; 
+                        window.location.href = window.location.origin + '/temp2=ON'; 
                         break;
                     case 'temp3': 
-                        window.location.href = window.location.origin + '/temp=3'; 
+                        window.location.href = window.location.origin + '/temp3=ON'; 
                         break;
                 }
             } else{
@@ -62,9 +62,13 @@ function toggle(button) {
                         window.location.href = window.location.origin + '/scent8=OFF'; 
                         break;
                     case 'temp1': 
+                        window.location.href = window.location.origin + '/temp1=0'; 
+                        break;
                     case 'temp2':
+                        window.location.href = window.location.origin + '/temp2=0'; 
+                        break;
                     case 'temp3': 
-                        window.location.href = window.location.origin + '/temp=0'; 
+                        window.location.href = window.location.origin + '/temp3=0'; 
                         break;
                 }
             }
