@@ -58,21 +58,33 @@ function toggle(button) {
                 });
                 break;
             case 'temp1':
-                $.post('template?temp=template1', function (data, status) {
+                    document.getElementById('temp1').setAttribute('value', 'OFF');
                     document.getElementById('temp1').style.opacity = "0.5";
                     document.getElementById('temp1').style.outline = "thick solid red";
+                $.post('template?temp=template1', function (data, status) {
+                    document.getElementById('temp1').style.opacity = "1";
+                    document.getElementById('temp1').style.outline = "none";
+                    document.getElementById('temp1').setAttribute('value', 'ON');
                 });
                 break;
             case 'temp2':
-                $.post('template?temp=template2', function (data, status) {
+                    document.getElementById('temp2').setAttribute('value', 'OFF');
                     document.getElementById('temp2').style.opacity = "0.5";
                     document.getElementById('temp2').style.outline = "thick solid red";
+                $.post('template?temp=template2', function (data, status) {
+                    document.getElementById('temp2').style.opacity = "1";
+                    document.getElementById('temp2').style.outline = "none";
+                    document.getElementById('temp2').setAttribute('value', 'ON');
                 });
                 break;
             case 'temp3':
-                $.post('template?temp=template3', function (data, status) {
+                    document.getElementById('temp3').setAttribute('value', 'OFF');
                     document.getElementById('temp3').style.opacity = "0.5";
                     document.getElementById('temp3').style.outline = "thick solid red";
+                $.post('template?temp=template3', function (data, status) {
+                    document.getElementById('temp3').style.opacity = "1";
+                    document.getElementById('temp3').style.outline = "none";
+                    document.getElementById('temp3').setAttribute('value', 'ON');
                 });
                 break;
         }
