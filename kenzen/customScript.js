@@ -57,10 +57,17 @@ function toggle(button) {
                     document.getElementById('scent8').style.outline = "thick solid red";
                 });
                 break;
+            case 'fan':
+                $.post('on?comp=fan', function (data, status) {
+                    document.getElementById('fan').setAttribute('value', 'OFF');
+                    document.getElementById('fan').style.opacity = "0.5";
+                    document.getElementById('fan').style.outline = "thick solid red";
+                });
+                break;
             case 'temp1':
-                    document.getElementById('temp1').setAttribute('value', 'OFF');
-                    document.getElementById('temp1').style.opacity = "0.5";
-                    document.getElementById('temp1').style.outline = "thick solid red";
+                document.getElementById('temp1').setAttribute('value', 'OFF');
+                document.getElementById('temp1').style.opacity = "0.5";
+                document.getElementById('temp1').style.outline = "thick solid red";
                 $.post('template?temp=template1', function (data, status) {
                     document.getElementById('temp1').style.opacity = "1";
                     document.getElementById('temp1').style.outline = "none";
@@ -68,9 +75,9 @@ function toggle(button) {
                 });
                 break;
             case 'temp2':
-                    document.getElementById('temp2').setAttribute('value', 'OFF');
-                    document.getElementById('temp2').style.opacity = "0.5";
-                    document.getElementById('temp2').style.outline = "thick solid red";
+                document.getElementById('temp2').setAttribute('value', 'OFF');
+                document.getElementById('temp2').style.opacity = "0.5";
+                document.getElementById('temp2').style.outline = "thick solid red";
                 $.post('template?temp=template2', function (data, status) {
                     document.getElementById('temp2').style.opacity = "1";
                     document.getElementById('temp2').style.outline = "none";
@@ -78,9 +85,9 @@ function toggle(button) {
                 });
                 break;
             case 'temp3':
-                    document.getElementById('temp3').setAttribute('value', 'OFF');
-                    document.getElementById('temp3').style.opacity = "0.5";
-                    document.getElementById('temp3').style.outline = "thick solid red";
+                document.getElementById('temp3').setAttribute('value', 'OFF');
+                document.getElementById('temp3').style.opacity = "0.5";
+                document.getElementById('temp3').style.outline = "thick solid red";
                 $.post('template?temp=template3', function (data, status) {
                     document.getElementById('temp3').style.opacity = "1";
                     document.getElementById('temp3').style.outline = "none";
@@ -146,6 +153,13 @@ function toggle(button) {
                     document.getElementById('scent8').style.outline = "none";
                 });
                 break;
+            case 'fan':
+                $.post('off?comp=fan', function (data, status) {
+                    document.getElementById('fan').setAttribute('value', 'ON');
+                    document.getElementById('fan').style.opacity = "1";
+                    document.getElementById('fan').style.outline = "none";
+                });
+                break;
             case 'temp1':
             case 'temp2':
             case 'temp3':
@@ -153,14 +167,14 @@ function toggle(button) {
         }
     }
 }
-        function load(){
-        /*    var elems = document.body.getElementsByTagName("*");
-            for(i=0; i<elems.length; i++){
-                if((elems[i].getAttribute("id") != null ) && (elems[i].getAttribute("id") != '') && (elems[i].tagName == 'DIV')){
-                    if(elems[i].getAttribute("value") == 'OFF'){
-                        elems[i].style.opacity = "0.5";
-                        elems[i].style.outline = "thick solid red";
-                    }                    
-                }
-            }*/
-        }
+function load() {
+    /*    var elems = document.body.getElementsByTagName("*");
+        for(i=0; i<elems.length; i++){
+            if((elems[i].getAttribute("id") != null ) && (elems[i].getAttribute("id") != '') && (elems[i].tagName == 'DIV')){
+                if(elems[i].getAttribute("value") == 'OFF'){
+                    elems[i].style.opacity = "0.5";
+                    elems[i].style.outline = "thick solid red";
+                }                    
+            }
+        }*/
+}
