@@ -37,7 +37,7 @@ function toggle(button) {
                 });
                 break;
             case 'blower6':
-                $.post('on?comp=blower6&smell=vannila', function (data, status) {
+                $.post('on?comp=blower6&smell=vanilla', function (data, status) {
                     document.getElementById('blower6').setAttribute('value', 'OFF');
                     document.getElementById('blower6').style.opacity = '0.5';
                     document.getElementById('blower6').style.outline = 'thick solid red';
