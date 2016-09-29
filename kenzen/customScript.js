@@ -169,7 +169,6 @@ window.setInterval(function () {
 function getStatus() {
     //Get the status of all the bloweres from the device and activate the button accordingly
     $.get('status', function (data, status) {
-        console.log(data);
         var json = JSON.parse(data);
         for (var key in json) {
             if (json[key]) {
