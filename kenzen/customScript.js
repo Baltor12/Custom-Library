@@ -16,7 +16,7 @@ function toggle(button) {
                 });
                 break;
             case 'blower3':
-                $.post('on?comp=blower3&smell=apple', function (data, status) {
+                $.post('on?comp=blower3&smell=yuzu', function (data, status) {
                     document.getElementById('blower3').setAttribute('value', 'OFF');
                     document.getElementById('blower3').style.opacity = '0.5';
                     document.getElementById('blower3').style.outline = 'thick solid red';
@@ -164,7 +164,7 @@ function load() {
 
 window.setInterval(function () {
     getStatus();
-}, 5000);
+}, 3000);
 
 function getStatus() {
     //Get the status of all the bloweres from the device and activate the button accordingly
